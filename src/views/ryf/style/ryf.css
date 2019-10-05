@@ -1,0 +1,19 @@
+.ryf ul{
+    display: flex;
+    background: gray;
+    padding: 10px 20px;
+}
+.ryf li{
+    margin: 0 15px 0  0;
+}
+.ryf a{
+    color: white;
+}
+.ryf a.active{
+    color: yellow;
+    text-shadow: 0px 0px 1px yellow;
+}
+
+.components{
+    padding: 30px 0 0;
+}

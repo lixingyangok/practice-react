@@ -1,0 +1,17 @@
+.nav{
+    margin: 30px;
+    background: black;
+}
+.nav ul{
+    display: flex;
+    padding: 10px 20px;
+}
+.nav li{
+    margin: 10px 10px;
+}
+.nav a{
+    color: white;
+}
+.nav a.active{
+    color: yellow;
+}
