@@ -1,5 +1,6 @@
 .ryf ul{
     display: flex;
+    flex-flow: wrap row;
     background: gray;
     padding: 10px 20px;
 }

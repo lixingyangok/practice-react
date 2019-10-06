@@ -1,7 +1,8 @@
 import React  from 'react';
 
-export default function Demo01(){
+export default function (){
     return <div>
+        <h1>入门：hello world</h1>
         Hello world;
     </div>;
 }
