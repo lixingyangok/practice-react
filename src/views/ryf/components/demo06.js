@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-console.log( PropTypes );
 
 class Demo extends Component {
     static propTypes = {
