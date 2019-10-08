@@ -49,10 +49,10 @@ class RyfDemo extends Component {
                     <Route path='/ryf/demo09'
                         component={React.lazy(()=>import('./components/demo09.js'))}
                     ></Route>
-                    {/* <Route path='/ryf/demo10'
+                    <Route path='/ryf/demo10'
                         component={React.lazy(()=>import('./components/demo10.js'))}
                     ></Route>
-                    <Route path='/ryf/demo11'
+                    {/* <Route path='/ryf/demo11'
                         component={React.lazy(()=>import('./components/demo11.js'))}
                     ></Route>
                     <Route path='/ryf/demo12'
