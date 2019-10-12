@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
 
 export default class Demo extends Component {
+    constructor( props ){
+        super( props );
+        console.clear();
+        console.log( '00：constructor' );
+    }
+    static getDerivedStateFromProps( props, state ){
+        console.log( '01：得到props，和state，getDerivedStateFromProps, willMount???' );
+        // console.log( props );
+        // console.log( state );
+        return state;
+    }
     state = {
         count: 1,
     }
     render() {
         let { state } = this;
-        console.log( 'render' );
+        console.log( '02：render' );
         return <div>
             <h1>
                生命周期：
@@ -22,18 +33,13 @@ export default class Demo extends Component {
             count: this.state.count + 1,
         });
     }
-    static getDerivedStateFromProps( props, state ){
-        console.log( 'getDerivedStateFromProps' );
-        console.log( props );
-        console.log( state );
-        return state;
-    }
+    
     
     // componentWillMount(){
     //     console.log( '01 - componentWillMount' );
     // }
     componentDidMount(){
-        console.log( '02 - componentDidMount' );
+        console.log( '03：装载完成——componentDidMount' );
     }
     // componentWillUpdate( nextProps, nextState){
     //     console.log( 'componentWillUpdate' );
@@ -45,7 +51,8 @@ export default class Demo extends Component {
     //     console.log( prevProps );
     //     console.log( prevState );
     // }
+    // 
     componentWillUnmount(){
-        console.log( 'componentWillUnmount' );
+        console.log( '04：卸载组件——componentWillUnmount' );
     }
 }
