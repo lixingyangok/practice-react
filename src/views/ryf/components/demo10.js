@@ -7,7 +7,8 @@ export default class Demo extends Component {
         console.log( '00：constructor' );
     }
     static getDerivedStateFromProps( props, state ){
-        console.log( '01：得到props，和state，getDerivedStateFromProps, willMount???' );
+        console.log( '得到props，和state' );
+        console.log( '01：getDerivedStateFromProps == componentWillMount ???' );
         // console.log( props );
         // console.log( state );
         return state;
@@ -20,7 +21,7 @@ export default class Demo extends Component {
         console.log( '02：render' );
         return <div>
             <h1>
-               生命周期：
+               生命周期：constructor、getDerivedStateFromProps、render、componentDidMount、componentWillUnmount
             </h1>
             <section>
                 当前数值：{ state.count } &nbsp;&nbsp;
@@ -33,26 +34,11 @@ export default class Demo extends Component {
             count: this.state.count + 1,
         });
     }
-    
-    
-    // componentWillMount(){
-    //     console.log( '01 - componentWillMount' );
-    // }
     componentDidMount(){
         console.log( '03：装载完成——componentDidMount' );
+        console.log( '■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■' );
     }
-    // componentWillUpdate( nextProps, nextState){
-    //     console.log( 'componentWillUpdate' );
-    //     console.log( nextProps );
-    //     console.log( nextState );
-    // }
-    // componentDidUpdate( prevProps, prevState){
-    //     console.log( 'componentDidUpdate' );
-    //     console.log( prevProps );
-    //     console.log( prevState );
-    // }
-    // 
     componentWillUnmount(){
         console.log( '04：卸载组件——componentWillUnmount' );
     }
-}
+} 

@@ -12,6 +12,7 @@ function App() {
           <Redirect exact from="/" to="/home" ></Redirect>
           <Route path="/home" component={React.lazy(() => import('./views/index/index.js'))} ></Route>
           <Route path="/ryf" component={React.lazy(() => import('./views/ryf/ryf.js'))} ></Route>
+          <Route path="/examples" component={React.lazy(() => import('./views/examples/examples.js'))} ></Route>
           <Route path="/about" component={React.lazy(() => import('./views/about/about.js'))} ></Route>
         </Switch>
       </Suspense>

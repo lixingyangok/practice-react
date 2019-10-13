@@ -13,6 +13,9 @@ function Nav(){
                 <NavLink to='/ryf' >阮一峰demo</NavLink>
             </li>
             <li>
+                <NavLink to='/examples' >练习案例</NavLink>
+            </li>
+            <li>
                 <NavLink to='/about' >about</NavLink>
             </li>
         </ul>
