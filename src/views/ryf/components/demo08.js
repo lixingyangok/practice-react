@@ -8,7 +8,7 @@ export default class Demo extends Component {
         let { state } = this;
         return <div>
             <h1>
-               定义state：state={'{}'};
+                定义state：state={'{}'};
             </h1>
             <div>
                 this.state.isLike = { state.isLike+"" }

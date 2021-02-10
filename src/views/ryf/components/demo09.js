@@ -9,7 +9,7 @@ export default class Demo extends Component {
         let { state } = this;
         return <div>
             <h1>
-               表单：表单变化事件 onChange;
+                表单：表单变化事件 onChange;
             </h1>
             <section>
                 <input type="text" name="val01" value={state.val01} onChange={ ev => this.valChanged(ev)} />

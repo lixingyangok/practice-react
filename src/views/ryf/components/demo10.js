@@ -21,7 +21,7 @@ export default class Demo extends Component {
         console.log( '02：render' );
         return <div>
             <h1>
-               生命周期：constructor、getDerivedStateFromProps、render、componentDidMount、componentWillUnmount
+                生命周期：constructor、getDerivedStateFromProps、render、componentDidMount、componentWillUnmount
             </h1>
             <section>
                 当前数值：{ state.count } &nbsp;&nbsp;
